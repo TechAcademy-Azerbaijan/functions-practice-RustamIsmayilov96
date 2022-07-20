@@ -1,9 +1,8 @@
-const prompt = require('prompt');
-prompt.start();
+function eded (reqem){
+    for (let i = 1; i < reqem; i++) {
+        if(i**2<reqem){
+            console.log(i**2);
+        }
+    }
 
-
-prompt.get('input', function (err, result) {
-  
-    // Write code here
-  
-});
+}eded(20)
