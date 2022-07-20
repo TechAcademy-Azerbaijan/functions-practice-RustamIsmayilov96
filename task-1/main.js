@@ -5,11 +5,10 @@ prompt.start();
 prompt.get('input', function (err, result) {
     /* 
     Istifadəçinin daxil etdiyi dəyişəni qəbul edirik. 
-    Giriş veriləni String type olur. Number type-a çevirmək üçün parseInt() metodundan istifadə edirik.
-    Vergüllə daxil edilmiş sətri iki fərqli ədədə bölmək üçün split metodundan istifadə edirik.
+    Giriş veriləni String type olur. Riyazi əməliyyatları tətbiq etmək üçün parseInt() metodundan istifadə edərək Number type-a çevrilməlidir.
     */
-    var input = result.input; // "2,3,5"
-    var numbers = input.split(','); // ['2', '3', '5']
+    var number = parseInt(result.input); // 9
+    var square_number = number*number; // 81
     let first = 0
     let second = 0
     let third = 0
@@ -28,4 +27,6 @@ prompt.get('input', function (err, result) {
     console.log(second);
     
     }
+    disk(123)
+    
 });
